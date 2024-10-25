@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Ricardo is here!</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>    
-  </head>
-  <body>
-    <div id="content">
-        <h1 class="element">Hello World</h1>
-        <h2 class="element"><b>Ricardo is here!</b></h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Ricardo Garcia - Python Developer & ML Enthusiast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Ricardo Garcia</h1>
+            <p>Python Developer & Machine Learning Enthusiast</p>
+            <p>Leveraging 15+ years of software engineering experience to develop efficient and scalable solutions in Python and machine learning.</p>
+        </div>
+    </header>
+`
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>As a Software Engineer with over 15 years of industry experience, I have contributed to the success of numerous software projects across multiple companies. My expertise encompasses the design and development of APIs, distributed services in AWS, data integration, and CI/CD practices, consistently delivering effective and production-ready solutions.</p>
+        <p>I thrive in Agile, collaborative environments that value shared ideas. Committed to best practices, I strive to contribute through my experience while continuously learning. My broad experience with diverse technologies provides a strong foundation for my recent focus on the Python ecosystem and machine learning.</p>
+    </section>
 
-        <h3>... working on this ...</h3>
-        <h3>... but priority is work on Python ...</h3>
-        <h3>... and Machine Learning.</h3>
-    </div>
-  </body>
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2>Skills & Technologies</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, Typescript, C#</li>
+            <li><strong>Python Libraries & Frameworks:</strong> Flask, Django, FastAPI, SQLAlchemy, PyTorch, Pandas</li>
+            <li><strong>Tools & Platforms:</strong> AWS, Docker, Node.js, LocalStack, Git, CircleCI, Serverless Framework, Terraform, ElasticSearch</li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container">
+      <h2>Portfolio</h2>
+        <div class="project">
+            <h3>Flask API using repository pattern
+              <a href="https://github.com/rigaml/practice-flask" target="_blank" aria-label="Open project link in new tab">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </h3>
+            <p>Flask API example using repository pattern to encapsulate database access.</p>
+        </div>
+        <div class="project">
+          <h3>Data Collection with AWS Lambda
+            <a href="https://github.com/rigaml/serverless-cron" target="_blank" aria-label="Open project link in new tab">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p>A serverless AWS Lambda function scheduled via a cron event that downloads and stores stock data from Yahoo Finance in an S3 bucket. Uses Docker to set the development environment, Serverless Framework for deployment, and Localstack for local testing.</p>
+      </div>
+      <div class="project">
+            <h3>Job Scraper
+              <a href="https://github.com/rigaml/job-scraper" target="_blank" aria-label="Open project link in new tab">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </h3>
+            <p>Scraping data from a job board site and using FastAPI to retrieve data stored.</p>
+        </div>
+        <div class="project">
+          <h3>Portfolio
+            <a href="https://github.com/rigaml/portfolio" target="_blank" aria-label="Open project link in new tab">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p>(Work in progress)Practicing usign Django to create an API.</p>
+      </div>
+  </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/rigame/" target="_blank">LinkedIn</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ricardo Garcia</p>
+    </footer>
+</body>
 </html>
