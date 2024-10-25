@@ -70,6 +70,12 @@ section#skills ul {
     color: #005999;
 }
 
+.portfolio-note {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
+
 /* Contact Styles */
 #contact a {
     color: #007acc;
