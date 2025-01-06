@@ -82,7 +82,7 @@ section#skills ul {
     gap: 10px; /* Spacing between items */
     list-style: none; /* Remove default list styles */
     padding: 0; /* Remove default padding */
-    margin: 0;
+    margin: 5px 0;
 }
 
 .tech-list li {
