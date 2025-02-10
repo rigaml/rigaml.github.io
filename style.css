@@ -5,9 +5,8 @@
     box-sizing: border-box;
 }
 
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
 }
@@ -20,19 +19,32 @@ body {
 }
 
 h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
     color: #444;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 0.3em;
 }
 
 /* Header Styles */
 header {
     background-color: #007acc;
     color: #fff;
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5em;
     color: #fff;
 }
 
@@ -49,25 +61,17 @@ section#about p, section#portfolio .project p {
     margin-top: 10px;
 }
 
-/* Portfolio Section */
-#portfolio .project {
-    background-color: #f4f4f4;
-    padding: 15px;
-    margin-top: 10px;
-    border-left: 4px solid #007acc;
-}
-
 section#skills ul {
     margin-left: 20px;
 }
 
-.project h3 a {
-    margin-left: 5px;
+/* Portfolio Section */
+#portfolio h2, h3 {
     color: #007acc;
-    text-decoration: none;
 }
-.project h3 a:hover {
-    color: #005999;
+
+#portfolio a {
+    text-decoration: none;
 }
 
 .portfolio-note {
@@ -76,18 +80,39 @@ section#skills ul {
     color: #555;
 }
 
-.tech-list {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 10px; /* Spacing between items */
-    list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
-    margin: 5px 0;
+.project {
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-left: 4px solid #007acc;
 }
 
-.tech-list li {
-    background-color: #e0f2f7; /* Light blue background */
-    color: #0d47a1; /* Dark blue text */
+.project a {
+    margin-left: 5px;
+    color: #007acc;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #009900;
+}
+
+.project a span {
+    text-decoration: underline;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+}
+
+.project-tech li {
+    background-color: #e0f2f7;
+    color: #0d47a1;
     padding: 4px 8px;
     border-radius: 5px;
     display: inline-block; /* Necessary for applying padding and border-radius correctly */
@@ -96,7 +121,16 @@ section#skills ul {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Subtle shadow */
 }
 
+.project-description {
+    padding-left: 20px;
+    margin: 0 5px;
+}
+
 /* Contact Styles */
+#contact h2, h3 {
+    color: #007acc;
+}
+
 #contact a {
     color: #007acc;
     text-decoration: none;

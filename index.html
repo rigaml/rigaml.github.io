@@ -15,9 +15,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <title>Ricardo Garcia - Python Developer & ML Enthusiast</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Ricardo Garcia - Python and C# Developer & ML Enthusiast</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -29,9 +30,9 @@
   <header>
     <div class="container">
       <h1>Ricardo Garcia</h1>
-      <p>Python Developer & Machine Learning Enthusiast</p>
-      <p>Leveraging 15+ years of software engineering experience to develop efficient and scalable solutions in Python
-        and machine learning.</p>
+      <p>Python and C# Developer & Machine Learning Enthusiast</p>
+      <p>Leveraging 15+ years of software engineering experience to develop efficient and scalable solutions in Python,
+        C# and machine learning.</p>
     </div>
   </header>
 
@@ -39,12 +40,12 @@
   <section id="portfolio" class="container">
     <h2>Projects</h2>
     <div class="project">
-      <a href="https://github.com/rigaml/portfolio" target="_blank" aria-label="Open project link in new tab">
-        <h3>RESTful API for Stock Portfolio Management and Tax Calculation
-          <i class="fas fa-external-link-alt"></i>
-        </h3>
-      </a>
-      <ul class="tech-list">
+      <h3>
+        <a href="https://github.com/rigaml/portfolio" target="_blank" aria-label="Open project link in new tab">
+          <span>RESTful API for Stock Portfolio Management and Tax Calculation</span> <i
+            class="fas fa-external-link-alt"></i></a>
+      </h3>
+      <ul class="project-tech">
         <li>Python</li>
         <li>Django</li>
         <li>Django Rest Framework</li>
@@ -53,17 +54,25 @@
         <li>Pylint</li>
         <li>Poetry</li>
       </ul>
-      <p>A few years ago, I created a script to help me fill in my HMRC tax returns for stock operation gains and losses
-        (mainly losses). Seeking a project to showcase my Django skills, I decided to replicate and enhance the existing
-        functionality using Django. (Work In Progress)</p>
+      <div>
+        <ul class="project-description">
+          <li>Built a Django-powered REST API to simplify stock portfolio tracking and tax compliance.</li>
+          <li>Automated FIFO-based profit calculations and currency conversions to GBP for UK tax rules.</li>
+          <li>Leveraged PostgreSQL for secure data storage.</li>
+          <li>Established comprehensive unit tests using pytest to ensure
+            reliability.</li>
+          <li>Implemented CI/CD pipelines with GitHub Actions to streamline delivery.</li>
+        </ul>
+      </div>
     </div>
     <div class="project">
-      <a href="https://github.com/rigaml/predict-backtest" target="_blank" aria-label="Open project link in new tab">
-        <h3>Stock Market Prediction using PyTorch and Backtesting
+      <h3>
+        <a href="https://github.com/rigaml/predict-backtest" target="_blank" aria-label="Open project link in new tab">
+          <span>Stock Market Prediction using PyTorch and Backtesting</span>
           <i class="fas fa-external-link-alt"></i>
-        </h3>
-      </a>
-      <ul class="tech-list">
+        </a>
+      </h3>
+      <ul class="project-tech">
         <li>Python</li>
         <li>PyTorch</li>
         <li>Pandas</li>
@@ -72,18 +81,29 @@
         <li>Pytest</li>
         <li>Poetry</li>
       </ul>
-      <p>This project leverages PyTorch to train a neural network on preprocessed stock market data. The trained model
-        is then validated on new, unseen data to assess its accuracy. If the predictions are accurate, a backtesting
-        library is used to simulate the model's performance on future data, providing insights into potential real-world
-        outcomes.</p>
+      <div>
+        <ul class="project-description">
+          <li>
+            Developed a PyTorch neural network to predict stock price movements using historical data.</li>
+          <li>
+            Implemented data preprocessing techniques to clean and prepare stock data for training.</li>
+          <li>
+            Integrated a backtesting library to simulate the model's performance on historical data.</li>
+          <li>
+            Evaluated various trading strategies using backtesting library.</li>
+          <li>
+            Documented results in Jupyter Notebooks and stored resulting model in models folder.</li>
+        </ul>
+      </div>
     </div>
     <div class="project">
-      <a href="https://github.com/rigaml/practice-flask" target="_blank" aria-label="Open project link in new tab">
-        <h3>Flask API using repository pattern
+      <h3>
+        <a href="https://github.com/rigaml/practice-flask" target="_blank" aria-label="Open project link in new tab">
+          <span>User Activity Monitoring API with Flask</span>
           <i class="fas fa-external-link-alt"></i>
-        </h3>
-      </a>
-      <ul class="tech-list">
+        </a>
+      </h3>
+      <ul class="project-tech">
         <li>Python</li>
         <li>Flask</li>
         <li>SQLAlchemy</li>
@@ -92,15 +112,35 @@
         <li>Pytest</li>
         <li>Poetry</li>
       </ul>
-      <p>Flask API example using repository pattern to encapsulate database access.</p>
+      <div>
+        <ul class="project-description">
+          <li>
+            Implemented a Flask API endpoint <i>/event</i> to process user actions (deposits/withdrawals).</li>
+          <li>
+            Designed and integrated a rule-based alert system, triggering alerts for specific behaviors (e.g., large
+            withdrawals, consecutive actions), enhancing security and fraud detection capabilities.</li>
+          <li>
+            Developed user-specific alert thresholds based on user risk profiles (low, medium, high).</li>
+          <li>
+            Implemented data persistence using SQLAlchemy with SQLite/PostgreSQL, ensuring reliable storage and
+            retrieval of user action data.</li>
+          <li>
+            Utilized Alembic for database migrations, tracking and managing schema changes, ensuring database
+            consistency and facilitating rollbacks.</li>
+          <li>
+            Employed the repository pattern to encapsulate data access, improving code maintainability and testability.
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="project">
-      <a href="https://github.com/rigaml/serverless-cron" target="_blank" aria-label="Open project link in new tab">
-        <h3>Data Collection with AWS Lambda
+      <h3>
+        <a href="https://github.com/rigaml/serverless-cron" target="_blank" aria-label="Open project link in new tab">
+          <span>Automated Stock Data Pipeline with Serverless AWS Lambda</span>
           <i class="fas fa-external-link-alt"></i>
-        </h3>
-      </a>
-      <ul class="tech-list">
+        </a>
+      </h3>
+      <ul class="project-tech">
         <li>Python</li>
         <li>Request</li>
         <li>Boto3/AWS client</li>
@@ -110,17 +150,30 @@
         <li>Docker</li>
         <li>Docker Compose</li>
       </ul>
-      <p>A serverless AWS Lambda function scheduled via a cron event that downloads and stores stock data from Yahoo
-        Finance in an S3 bucket. Uses Docker to set the development environment, Serverless Framework for deployment,
-        and Localstack for local testing.</p>
+      <div>
+        <ul class="project-description">
+          <li>
+            Built an AWS Lambda pipeline that automatically downloads stock data following a cron-based schedule,
+            reducing manual effort by 100% and running costs.</li>
+          <li>
+            Streamlined local development with Docker and Localstack, enabling local testing without incurring cloud
+            costs.</li>
+          <li>
+            Optimized data storage by structuring it in AWS S3 buckets.
+          </li>
+          <li>
+            Engineered the project to be easily deployable with the Serverless Framework.</li>
+        </ul>
+      </div>
     </div>
     <div class="project">
-      <a href="https://github.com/rigaml/job-scraper" target="_blank" aria-label="Open project link in new tab">
-        <h3>Job Boards Scraper
+      <h3>
+        <a href="https://github.com/rigaml/job-scraper" target="_blank" aria-label="Open project link in new tab">
+          <span>Job Boards Scraper</span>
           <i class="fas fa-external-link-alt"></i>
-        </h3>
-      </a>
-      <ul class="tech-list">
+        </a>
+      </h3>
+      <ul class="project-tech">
         <li>Python</li>
         <li>FastAPI</li>
         <li>Pydantic</li>
@@ -129,7 +182,23 @@
         <li>Pytest</li>
         <li>Poetry</li>
       </ul>
-      <p>Scraping data from a job board site and then using FastAPI to build an API to expose the data.</p>
+      <div>
+        <ul class="project-description">
+          <li>
+            Engineered a web scraping solution using Python and Selenium that automatically extracts detailed
+            job postings from JobServe, reducing manual job search time.</li>
+          <li>
+            Implemented a clean architecture pattern with dependency injection, abstract base classes, and repository
+            pattern demonstrating strong software design principles.</li>
+          <li>
+            Built a FastAPI service with Swagger documentation, providing access to stored
+            data through RESTful endpoints.</li>
+          <li>
+            Developed a robust data pipeline using SQLAlchemy and SQLite, ensuring reliable storage and retrieval of
+            job market information.</li>
+        </ul>
+
+      </div>
     </div>
 
 
