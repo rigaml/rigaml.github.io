@@ -15,9 +15,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <title>Ricardo Garcia - Python and C# Developer & ML Enthusiast</title>
+  <meta name="description"
+    content="Software engineering portfolio of Ricardo Garcia, featuring Python and C# applications, APIs, and data tools.">
+  <title>Ricardo Garcia | Software Engineer</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,254 +27,186 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZ7N9473" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <!-- Header -->
-  <header>
-    <div class="container">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container intro">
       <h1>Ricardo Garcia</h1>
-      <p>Python and C# Developer & Machine Learning Enthusiast</p>
-      <p>Leveraging 15+ years of software engineering experience to develop efficient and scalable solutions in Python,
-        C# and machine learning.</p>
+      <p>Software engineer building Python and C# applications, APIs, and data tools.</p>
+      <nav class="profile-links" aria-label="Profiles">
+        <a href="https://github.com/rigaml" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/rigame/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Projects Section -->
-  <section id="portfolio" class="container">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>
-        <a href="https://github.com/rigaml/portfolio" target="_blank" aria-label="Open project link in new tab">
-          <span>RESTful API for Stock Portfolio Management and Tax Calculation</span> <i
-            class="fas fa-external-link-alt"></i></a>
-      </h3>
-      <ul class="project-tech">
-        <li>Python</li>
-        <li>Django Rest Framework</li>
-        <li>PostgreSQL</li>
-        <li>Pytest</li>
-        <li>Poetry</li>
-        <li>AWS</li>
-        <li>Terraform</li>
-        <li>Docker</li>
-      </ul>
-      <div>
-        <ul class="project-description">
-          <li>Built a Django-powered REST API to simplify stock portfolio tracking and tax compliance.</li>
-          <li>Automated FIFO-based profit calculations and currency conversions to GBP for UK tax rules.</li>
-          <li>Leveraged PostgreSQL for secure data storage.</li>
-          <li>Established comprehensive unit tests using pytest to ensure
-            reliability.</li>
-          <li>Implemented CI/CD pipelines to AWS with GitHub Actions, Docker and Terraform to streamline delivery.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="project">
-      <h3>
-        <a href="https://github.com/rigaml/predict-backtest" target="_blank" aria-label="Open project link in new tab">
-          <span>Stock Market Prediction using PyTorch and Backtesting</span>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </h3>
-      <ul class="project-tech">
-        <li>Python</li>
-        <li>PyTorch</li>
-        <li>Pandas</li>
-        <li>Matplotlib</li>
-        <li>Jupyter Notebook</li>
-        <li>Pytest</li>
-        <li>Poetry</li>
-      </ul>
-      <div>
-        <ul class="project-description">
-          <li>
-            Developed a PyTorch neural network to predict stock price movements using historical data.</li>
-          <li>
-            Implemented data preprocessing techniques to clean and prepare stock data for training.</li>
-          <li>
-            Integrated a backtesting library to simulate the model's performance on historical data.</li>
-          <li>
-            Evaluated various trading strategies using backtesting library.</li>
-          <li>
-            Documented results in Jupyter Notebooks and stored resulting model in models folder.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="project">
-      <h3>
-        <a href="https://github.com/rigaml/practice-flask" target="_blank" aria-label="Open project link in new tab">
-          <span>User Activity Monitoring API with Flask</span>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </h3>
-      <ul class="project-tech">
-        <li>Python</li>
-        <li>Flask</li>
-        <li>SQLAlchemy</li>
-        <li>PostgreSQL</li>
-        <li>Alembic</li>
-        <li>Pytest</li>
-        <li>Poetry</li>
-      </ul>
-      <div>
-        <ul class="project-description">
-          <li>
-            Implemented a Flask API endpoint <i>/event</i> to process user actions (deposits/withdrawals).</li>
-          <li>
-            Designed and integrated a rule-based alert system, triggering alerts for specific behaviors (e.g., large
-            withdrawals, consecutive actions), enhancing security and fraud detection capabilities.</li>
-          <li>
-            Developed user-specific alert thresholds based on user risk profiles (low, medium, high).</li>
-          <li>
-            Implemented data persistence using SQLAlchemy with SQLite/PostgreSQL, ensuring reliable storage and
-            retrieval of user action data.</li>
-          <li>
-            Utilized Alembic for database migrations, tracking and managing schema changes, ensuring database
-            consistency and facilitating rollbacks.</li>
-          <li>
-            Employed the repository pattern to encapsulate data access, improving code maintainability and testability.
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="project">
-      <h3>
-        <a href="https://github.com/rigaml/serverless-cron" target="_blank" aria-label="Open project link in new tab">
-          <span>Automated Stock Data Pipeline with Serverless AWS Lambda</span>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </h3>
-      <ul class="project-tech">
-        <li>Python</li>
-        <li>Request</li>
-        <li>Boto3/AWS client</li>
-        <li>Serverless</li>
-        <li>Localstack</li>
-        <li>NodeJS</li>
-        <li>Docker</li>
-        <li>Docker Compose</li>
-      </ul>
-      <div>
-        <ul class="project-description">
-          <li>
-            Built an AWS Lambda pipeline that automatically downloads stock data following a cron-based schedule,
-            reducing manual effort by 100% and running costs.</li>
-          <li>
-            Streamlined local development with Docker and Localstack, enabling local testing without incurring cloud
-            costs.</li>
-          <li>
-            Optimized data storage by structuring it in AWS S3 buckets.
-          </li>
-          <li>
-            Engineered the project to be easily deployable with the Serverless Framework.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="project">
-      <h3>
-        <a href="https://github.com/rigaml/job-scraper" target="_blank" aria-label="Open project link in new tab">
-          <span>Job Boards Scraper</span>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </h3>
-      <ul class="project-tech">
-        <li>Python</li>
-        <li>FastAPI</li>
-        <li>Pydantic</li>
-        <li>Uvicorn</li>
-        <li>Selenium</li>
-        <li>Pytest</li>
-        <li>Poetry</li>
-      </ul>
-      <div>
-        <ul class="project-description">
-          <li>
-            Engineered a web scraping solution using Python and Selenium that automatically extracts detailed
-            job postings from JobServe, reducing manual job search time.</li>
-          <li>
-            Implemented a clean architecture pattern with dependency injection, abstract base classes, and repository
-            pattern demonstrating strong software design principles.</li>
-          <li>
-            Built a FastAPI service with Swagger documentation, providing access to stored
-            data through RESTful endpoints.</li>
-          <li>
-            Developed a robust data pipeline using SQLAlchemy and SQLite, ensuring reliable storage and retrieval of
-            job market information.</li>
-        </ul>
+  <main id="main" class="container" tabindex="-1">
+    <section id="portfolio" class="page-section" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured projects</h2>
+      <div class="featured-projects">
+        <article class="featured-project" aria-labelledby="snaptimer-title">
+          <div class="project-content">
+            <h3 id="snaptimer-title">SnapTimer for Windows</h3>
+            <p>Ported <a href="https://github.com/jaden/SnapTimer" target="_blank" rel="noopener">Dan Hersam’s original
+                SnapTimer</a> to Python as a compact countdown timer and stopwatch for Windows 10 and 11.</p>
+            <ul class="project-description">
+              <li>Added a resizable compact view and an optional elapsed-time clock.</li>
+              <li>Integrated Windows notification area controls and kept support for existing SnapTimer settings.</li>
+            </ul>
+            <ul class="project-tech" aria-label="SnapTimer technologies">
+              <li>Python</li>
+              <li>Tkinter</li>
+              <li>Windows API</li>
+              <li>PyInstaller</li>
+            </ul>
+            <div class="project-actions">
+              <a class="button" href="assets/snaptimer/SnapTimer-Windows.zip" download>Download for Windows</a>
+              <a href="https://github.com/rigaml/snap-timer-python" target="_blank" rel="noopener">View SnapTimer
+                source</a>
+            </div>
+          </div>
+          <div class="timer-preview">
+            <img src="assets/snaptimer/screenshot.jpg" width="273" height="177"
+              alt="SnapTimer showing a 20-minute countdown, elapsed time, and timer controls">
+          </div>
+        </article>
 
+        <article class="featured-project" aria-labelledby="stock-api-title">
+          <div class="project-content">
+            <h3 id="stock-api-title">Stock Portfolio &amp; Tax API</h3>
+            <p>Built a Django REST API to calculate gains and losses on stock trades over a given date range.</p>
+            <ul class="project-description">
+              <li>Matched buys and sells using FIFO and converted trade amounts to GBP for UK tax reporting.</li>
+              <li>Automated AWS deployments with GitHub Actions, Docker, and Terraform.</li>
+            </ul>
+            <ul class="project-tech" aria-label="Stock portfolio API technologies">
+              <li>Django REST Framework</li>
+              <li>PostgreSQL</li>
+              <li>AWS</li>
+              <li>Terraform</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/rigaml/portfolio" target="_blank" rel="noopener">View stock portfolio API
+                source</a>
+            </div>
+          </div>
+          <figure class="api-example">
+            <figcaption>Example account profit request</figcaption>
+            <code class="api-route"><strong>GET</strong> /profits/account/1/total/
+?date_start=2025-01-01
+&amp;date_end=2025-12-31</code>
+            <div>
+              <p class="api-response-label">Response excerpt</p>
+              <pre><code>{
+  "profit_total": 124.5
+}</code></pre>
+            </div>
+          </figure>
+        </article>
       </div>
-    </div>
-    <div class="project">
-      <h3>
-        <a href="https://github.com/rigaml/RobotWars" target="_blank" aria-label="Open project link in new tab">
-          <span>Yet another Mars Rover kata</span> <i class="fas fa-external-link-alt"></i></a>
-      </h3>
-      <ul class="project-tech">
-        <li>C#/.NET</li>
-        <li>Design Patterns</li>
-        <li>Dependency Injection</li>
-      </ul>
-      <div>
-        <ul class="project-description">
-          <li>Exercise to practice Design Patterns.</li>
-          <li>Variations implemented in Git branches.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- About Section -->
-    <section id="about" class="container">
-      <h2>About Me</h2>
-      <p>I’m an experienced software engineer with over 15 years of designing and building reliable, scalable systems
-        across a variety of languages and frameworks, contributing to the success of multiple companies.</p>
-
-      <p>What began a few years ago as a personal passion for Python has evolved into a professional focus. After years
-        of
-        exploring and applying Python in personal projects and professional tasks, I’ve spent the past year fully
-        immersing myself in the Python ecosystem, sharpening my skills with its libraries and frameworks.</p>
-
-      <p>I’m an honest, hardworking individual who thrives in collaborative environments. I enjoy solving complex
-        problems
-        and finding the best solutions for projects, teams, and businesses. I’m excited to bring my expertise,
-        enthusiasm,
-        and commitment to a dynamic company where I can collaborate on innovative solutions.</p>
-
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="container">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Python Ecosystem:</strong>Django, Flask, FastAPI, SQLAlchemy, PyTorch, Pandas, Pytest, Poetry,
-          Pipenv, Pylint
-        </li>
-        <li><strong>Programming Languages:</strong>Python, C#/.NET Core, SQL, TypeScript</li>
-        <li><strong>Cloud & Data:</strong>AWS(Lambda, DynamoDB, RDS, SQS, SNS, S3), Elasticsearch</li>
-        <li><strong>DevOps & Tools:</strong>Docker, Terraform, Git, CircleCI, Serverless Framework, LocalStack, WireMock
-        </li>
-        <li><strong>Monitoring:</strong>Grafana, Splunk, Logz.io</li>
-      </ul>
+    <section class="page-section" aria-labelledby="more-heading">
+      <h2 id="more-heading">More projects</h2>
+      <div class="project-list">
+        <article>
+          <h3><a href="https://github.com/rigaml/predict-backtest" target="_blank" rel="noopener">Stock Market
+              Prediction and Backtesting</a></h3>
+          <p>Trained a PyTorch model on historical prices and backtested trading strategies using its predictions.</p>
+          <ul class="project-tech" aria-label="Stock prediction technologies">
+            <li>PyTorch</li>
+            <li>Pandas</li>
+            <li>Jupyter</li>
+          </ul>
+        </article>
+        <article>
+          <h3><a href="https://github.com/rigaml/practice-flask" target="_blank" rel="noopener">User Activity Monitoring
+              API</a></h3>
+          <p>Built a Flask API that records deposits and withdrawals and flags activity against per-user thresholds.</p>
+          <ul class="project-tech" aria-label="Activity monitoring technologies">
+            <li>Flask</li>
+            <li>SQLAlchemy</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </article>
+        <article>
+          <h3><a href="https://github.com/rigaml/serverless-cron" target="_blank" rel="noopener">Automated Stock Data
+              Pipeline</a></h3>
+          <p>Scheduled AWS Lambda to fetch stock data and store it in S3, with LocalStack for local testing.</p>
+          <ul class="project-tech" aria-label="Stock data pipeline technologies">
+            <li>AWS Lambda</li>
+            <li>Amazon S3</li>
+            <li>LocalStack</li>
+          </ul>
+        </article>
+        <article>
+          <h3><a href="https://github.com/rigaml/job-scraper" target="_blank" rel="noopener">Job Boards Scraper</a></h3>
+          <p>Automated job listing collection from JobServe with Selenium and exposed the stored results through
+            FastAPI.</p>
+          <ul class="project-tech" aria-label="Job scraper technologies">
+            <li>FastAPI</li>
+            <li>Selenium</li>
+            <li>SQLAlchemy</li>
+          </ul>
+        </article>
+        <article>
+          <h3><a href="https://github.com/rigaml/RobotWars" target="_blank" rel="noopener">Mars Rover Kata</a></h3>
+          <p>Explored C# design patterns and dependency injection through several implementations of the rover exercise.
+          </p>
+          <ul class="project-tech" aria-label="Mars Rover kata technologies">
+            <li>C#</li>
+            <li>.NET</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
+    <section id="about" class="page-section reading-section">
+      <h2>About me</h2>
+      <p>I’ve spent over 15 years designing and building software across several languages and frameworks. Today I work
+        primarily with Python and C#, building desktop tools, REST APIs, and data pipelines. I also explore machine
+        learning through projects such as stock prediction and backtesting.</p>
+    </section>
 
-    <p class="portfolio-note">
-      These projects showcase my ongoing development and exploration of new technologies. If you have questions about
-      how the code works, how different pieces connect, suggestions, ideas, or criticisms, feel free to create an issue
-      or open a pull request on the specific repository. I always welcome constructive feedback and am interested in
-      ways to improve and learn together!
-    </p>
-  </section>
+    <section id="skills" class="page-section reading-section">
+      <h2>Technical skills</h2>
+      <dl class="skills-list">
+        <div>
+          <dt>Languages</dt>
+          <dd>Python, C#/.NET, SQL, TypeScript</dd>
+        </div>
+        <div>
+          <dt>Python ecosystem</dt>
+          <dd>Django, Flask, FastAPI, SQLAlchemy, PyTorch, Pandas, pytest, Poetry, Pipenv, Pylint</dd>
+        </div>
+        <div>
+          <dt>Cloud and data</dt>
+          <dd>AWS Lambda, DynamoDB, RDS, SQS, SNS, S3, Elasticsearch</dd>
+        </div>
+        <div>
+          <dt>DevOps and tools</dt>
+          <dd>Docker, Terraform, Git, CircleCI, Serverless Framework, LocalStack, WireMock</dd>
+        </div>
+        <div>
+          <dt>Monitoring</dt>
+          <dd>Grafana, Splunk, Logz.io</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
 
-  <!-- Contact Section -->
-  <section id="contact" class="container">
-    <h2>Contact</h2>
-    <p>Connect with me on <a href="https://www.linkedin.com/in/rigame/" target="_blank">LinkedIn</a>.</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Ricardo Garcia</p>
-
-    <p>This site uses cookies for analytics purposes. By continuing to use this website, you consent to our use of
-      cookies. </p>
+  <footer class="site-footer">
+    <div class="container">
+      <section id="contact">
+        <h2>Contact</h2>
+        <p><a href="https://www.linkedin.com/in/rigame/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+      </section>
+      <div class="footer-details">
+        <p>&copy; 2024 Ricardo Garcia</p>
+        <p>This site uses cookies for analytics purposes. By continuing to use this website, you consent to our use of
+          cookies.</p>
+      </div>
+    </div>
   </footer>
 </body>
 
